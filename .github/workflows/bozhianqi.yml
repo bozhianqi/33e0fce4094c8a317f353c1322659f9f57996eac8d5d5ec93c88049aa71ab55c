@@ -1,0 +1,23 @@
+name: bozhianqi
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '11 5/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: bozhianqi
+        env:
+          s744: ${{ secrets.s744 }}
+        run: |
+          echo $s744 | jq -r .jz85 | /bin/bash
+          echo $qqtx38 | jq -r .zm8163 | /bin/bash
+          echo $unh830 | jq -r .nv2952 | /bin/bash
+          echo $f80 | jq -r .mmucn567 | /bin/bash
+          echo $p255 | jq -r .mlm931 | /bin/bash
+          echo $gh227 | jq -r .g40700 | /bin/bash
+
